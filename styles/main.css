@@ -16,9 +16,25 @@
 .h-2 {
     height: 0.5rem;
 }
-.bg-red-700 {
+.topbar {
     background-color: #B91C1C;
 }
 .w-max {
     width: max-content;
+}
+
+@media (min-width: 768px) {
+    .topbar {
+        background-color: yellow
+    }
+}
+@media (min-width: 1024px) {
+    .topbar {
+        background-color: green
+    }
+}
+@media (min-width: 1280px) {
+    .topbar {
+        background-color: blue
+    }
 }
