@@ -1,3 +1,24 @@
+.m-0 {
+    margin: 0; 
+}
+.bg-gray-600 {
+    background-color: #6B7280;
+}
+.bg-cover {
+    background-size: cover;
+}
 .text-red-700 {
     color: #B91C1C; 
+}
+.border-2 {
+    border-width: 2px;
+}
+.h-2 {
+    height: 0.5rem;
+}
+.bg-red-700 {
+    background-color: #B91C1C;
+}
+.w-max {
+    width: max-content;
 }
