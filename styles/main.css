@@ -4,8 +4,8 @@
 .bg-gray-600 {
     background-color: #6B7280;
 }
-.bg-cover {
-    background-size: cover;
+.w-40 {
+    width: 10rem;
 }
 .text-red-700 {
     color: #B91C1C; 
