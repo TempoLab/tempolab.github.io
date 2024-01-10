@@ -23,6 +23,7 @@
     width: max-content;
 }
 
+/* media queries */
 @media (min-width: 768px) {
     .topbar {
         background-color: yellow
