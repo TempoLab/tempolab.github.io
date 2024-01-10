@@ -1,6 +1,7 @@
 .body {
     margin: 0;
-    background-color: #ededed;
+    background-color: #414a55;
+    color: white;
 }
 .flex-container {
     display: flex;
@@ -14,7 +15,7 @@
     justify-items: center;
     place-items: center;
     align-items: center;
-    background-color: #d3dce8;
+    background-color: #5e7aa0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
@@ -22,9 +23,9 @@
     column-gap: 5px;
 }
 .nav-item {
-    background-color: #e8e1d5;
+    background-color: #b19c78;
     border-radius: 0.5rem;
-    border: solid #bfd0e7;
+    border: solid #8a96a7;
     padding: 10px;
 }
 .home-button {
@@ -83,7 +84,7 @@ a:visited {
     margin-right: auto;
 }
 .footer {
-    background-color: #e8e1d5;
+    background-color: #a89471;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     margin-top: auto;
@@ -159,7 +160,6 @@ a:visited {
     }
     .blog-entry-4 {
         grid-column: 5/6;
-        grid-row: 1/2;
     }
 }
 @media (min-width: 1280px) {
