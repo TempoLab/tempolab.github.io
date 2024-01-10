@@ -1,6 +1,6 @@
 .body {
     margin: 0;
-    background-color: #EDEDED;
+    background-color: #ededed;
 }
 .flex-container {
     display: flex;
@@ -10,20 +10,42 @@
 }
 .navbar {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: center;
-    background-color: #D3DCE8;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    background-color: #d3dce8;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 2rem;
+    row-gap: 5px;
+    column-gap: 5px;
 }
 .nav-item {
-    background-color: #E8E1D5;
+    background-color: #e8e1d5;
     border-radius: 0.5rem;
     border: solid #bfd0e7;
     padding: 10px;
-    margin-right: auto;
-    margin-left: 2rem;
+}
+.home-button {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.toggle-dark {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.blog-entry-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.blog-entry-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.blog-entry-3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 a:link {
     color: black;
@@ -44,7 +66,7 @@ a:visited {
     text-align: center;
 }
 .img-main {
-    border-radius: 9999px; 
+    border-radius: 9999px;
     width: 10rem;
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +76,7 @@ a:visited {
     text-align: center;
 }
 .footer {
-    background-color: #E8E1D5;
+    background-color: #e8e1d5;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     margin-top: auto;
@@ -70,21 +92,21 @@ a:visited {
     height: 0.5rem;
 }
 .topbar {
-    background-color: #B91C1C;
+    background-color: #b91c1c;
 }
 /* media queries */
 @media (min-width: 768px) {
     .topbar {
-        background-color: yellow
+        background-color: yellow;
     }
 }
 @media (min-width: 1024px) {
     .topbar {
-        background-color: green
+        background-color: green;
     }
 }
 @media (min-width: 1280px) {
     .topbar {
-        background-color: blue
+        background-color: blue;
     }
 }
