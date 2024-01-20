@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>JS Fundamentals Blog Post</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="body">
+    <div class="flex-container">
+        <nav class="navbar">
+            <a class="nav-item home-button" href="../index.html">Home</a>
+            <a class="nav-item blog-entry-1" href="../blog-index.html"
+                >Blog Pages</a
+            >
+            <div class="toggle-dark" id="darkModeContainer">
+                <button class="nav-item" id="toggleDark">☾</button>
+            </div>
+        </nav>
+        <main class="main-content">
+            <h1 class="blog-title">JS Fundamentals Blog Post</h1>
+            <div class="p-text-blog">
+                <h1>JS Fundamentals Blog Post</h1>
+                <h3>What is JS, and how does it relate to HTML and CSS?</h3>
+                <p>HTML is the the content on a page, so if we take an A4 paper, the HTML would be the <em>literal</em> words on the page. There are a couple additional things that could be noted about HTML but we dont need those to understand its relationship to JS.</p>
+                <p>CSS is the styling, so with that same A4 page example, it would be the colour of the paper, the font chosen, colour of the text, the space between the paragraphs, size of the text, anything you could imagine in terms of how the paper and what is on it looks (that isnt the actual content of what is written there).</p>
+                <p>JS is the functionality or interactivity, so flipping the page over, folding it in half, turning it into a paper airplane or if you think of that same A4 page but now it is an iPad. You can click on things to change them and interact with the page, that is what JS brings to the web.</p>
+                <h3>Control flow and Loops.</h3>
+                <p>Control flow is rather simple, it is the order in which code runs. It starts at the top and then as it encounters different types of code it'll change that top down flow.</p>
+                <p>So if you were going to the shop to buy groceries the control flow would look like leaving your house and arriving at the store buying your groceries leaving the store and then arriving home again. Well, not so simple. What if your car needs gas, Or if theres a detour or you need to grab your grocery bags and put them in the car?</p>
+                <p>These events would interrupt your control flow where applicable, not every day you need to go out of your way to fill up with gas, but on the days that you do, this will interrupt your trip to the store!</p>
+                <p>No big deal, but what about walking up and down each isle in the grocery store? Much like loops which will stop your control flow to loop over information before continuing. You would then stop at this task, and continue down each isle until done.</p>
+                <h3>What is the DOM and how do we interact with it?</h3>
+                <p>The 'DOM' or Document Object Model, not as intimidating or as mystical as it seems. I actually think this is so simple that people overcomplicate it in their heads.</p>
+                <p>The DOM is just the page (or document) so we can manipulate the structure, style and content (or objects) with programming languages, in this case JS.</p>
+                <h3>What is the difference between how we access data from arrays and objects?</h3>
+                <p>Objects are stored in 'key: value' pairs, for example if we had an object:</p>
+                <pre><code>const cat = {
+                  name: 'Suse',
+                  colour: 'white',
+                  numberOfLegs: 4,
+                  goodBoy: true
+                }</code></pre>
+            </br>
+                <p>
+                One would access `name` with something like `console.log(cat.name)` which would return the string 'Suse'.</p>
+                <p>
+                Arrays are stored and accessed with their index. It is worth noting that array values start at '0'. Lets consider this array:</p>
+                <pre><code>const susesFriends = ['Oscar', 'Hobbes', 'Caligo']</code></pre>
+            </br>
+                <p>
+                You could access the string 'Hobbes' with `console.log(susesFriends[1])`. Dont forget they start at 0!</p>
+                <h3>What are functions and why are they helpful?</h3>
+                <p>
+                Functions are processes, or little 'factories' that perform tasks. Looking back at our grocery store example. Filling your car up with gas would be a function that only triggers when the cars fuel light comes on.</p>
+                <p>
+                Im sure you could see why this is useful as you would run out of gas without our handy dandy filling car up with gas function. Or find all of our grocery store items with our check isles loop!</p>
+                <p>
+                Functions are why anything is possible with enough time and money!</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="homegroup-text">
+                <p>Homegroup Six Hype! 🎉</p>
+            </div>
+        </footer>
+        <script src="../scripts/dark-mode.js"></script>
+    </div>
+</body>
