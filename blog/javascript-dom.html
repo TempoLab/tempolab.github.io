@@ -9,9 +9,24 @@
     <div class="flex-container">
         <nav class="navbar">
             <a class="nav-item home-button" href="../index.html">Home</a>
-            <a class="nav-item blog-entry-1" href="../blog-index.html"
-                >Blog Pages</a
-            >
+            <div>
+                <button class="nav-item nav-blog-pages" id="blog-pages-button">
+                    Blog Pages
+                </button>
+                <div class="burger-menu-blog-pages" id="burger-menu-tray">
+                    <ul>
+                        <p class="burger-menu-sprint-text">Sprint 1</p>
+                        <li><a href="identity-values.html">Identity Vaules Blog Post</a></li>
+                        <p class="burger-menu-sprint-text">Sprint 2</p>
+                        <li><a href="te-houtaewa-template.html">Te Houtaewa Story</a></li>
+                        <li><a href="html-css.html">CSS Concept Article</a></li>
+                        <li><a href="learning-plan.html">Learning Plan</a></li>
+                        <p class="burger-menu-sprint-text">Sprint 3</p>
+                        <li><a href="emotional-intelligence.html">Emotional Intelligence Blog Post</a></li>
+                        <li><a href="javascript-dom.html">JS Fundamentals Blog Post</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="toggle-dark" id="darkModeContainer">
                 <button class="nav-item" id="toggleDark">☾</button>
             </div>
@@ -64,5 +79,6 @@
             </div>
         </footer>
         <script src="../scripts/dark-mode.js"></script>
+        <script src="../scripts/burger-menu.js"></script>
     </div>
 </body>

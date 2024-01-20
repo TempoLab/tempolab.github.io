@@ -7,6 +7,9 @@
     --blog-index-item-border-col: #bfd0e7;
     --footer-bg: #e8e1d5;
     --pre-bg: #c4c4c4;
+    --index-menu-col: #d3dce8;
+    --index-menu-border: #bfd0e7;
+    --index-menu-hover: #5e7aa0;
   }
   .dark{
     --body-bg: #414a55;
@@ -19,6 +22,9 @@
     --blog-index-item-border-col: #486b9c;
     --footer-bg: #a89471;
     --pre-bg: #1b1f24;
+    --index-menu-col: #5e7aa0;
+    --index-menu-border: #486b9c;
+    --index-menu-hover: #d3dce8;
   }
 .body {
     background: var(--body-bg);
@@ -55,20 +61,17 @@ pre {
     border: solid var(--nav-item-border-col);
     padding: 10px;
 }
-.home-button {
+/* .home-button {
     grid-column: 1/2;
-    grid-row: 1/2;
+}
+.nav-blog-pages {
+    grid-column: 2/3;
 }
 .toggle-dark {
     grid-column: 3/4;
-    grid-row: 1/2;
-}
+} */
 .toggle-dark:hover {
     cursor: pointer;
-}
-.blog-entry-1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
 }
 a:link {
     color: black;
@@ -114,6 +117,10 @@ a:visited {
     margin-left: auto;
     margin-right: auto;
 }
+.burger-menu-sprint-text {
+    font-weight: bold;
+    border-bottom: 4px solid #1b1f24;
+}
 .p-text-main {
     margin-top: 2rem;
     text-align: center;
@@ -157,6 +164,33 @@ a:visited {
 .topbar {
     background-color: #b91c1c;
 }
+/* burger */
+.burger-menu-blog-pages {
+    position: absolute;
+    top: 8%;
+    visibility: hidden;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    & ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        list-style-type: none;
+        > li {
+            margin-bottom: 1rem;
+        }
+    }
+    &.active {
+        visibility: visible;
+        border-radius: 0 0 1rem 1rem;
+        background-color: var(--index-menu-col);
+        border-right: solid var(--index-menu-border);
+        border-bottom: solid var(--index-menu-border);
+        border-left: solid var(--index-menu-border);
+        > ul > li > a:hover {
+            color: var(--index-menu-hover);
+        }
+    }
+}
 /* media queries */
 @media (min-width: 768px) {
     .topbar {
@@ -173,7 +207,7 @@ a:visited {
         grid-column: 4/5;
         grid-row: 1/2;
     }
-    .blog-entry-1 {
+    .nav-blog-pages {
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -193,7 +227,7 @@ a:visited {
         grid-column: 6/7;
         grid-row: 1/2;
     }
-    .blog-entry-1 {
+    .nav-blog-pages {
         grid-column: 2/3;
         grid-row: 1/2;
     }
