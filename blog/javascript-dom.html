@@ -3,7 +3,11 @@
     <title>JS Fundamentals Blog Post</title>
     <meta charset="UTF-8" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-coldark-dark.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <div class="flex-container">
@@ -49,21 +53,21 @@
                 <p>The DOM is just the page (or document) so we can manipulate the structure, style and content (or objects) with programming languages, in this case JS.</p>
                 <h3>What is the difference between how we access data from arrays and objects?</h3>
                 <p>Objects are stored in 'key: value' pairs, for example if we had an object:</p>
-                <pre><code>const cat = {
+                <div class="code-block"><pre><code class="language-js">const cat = {
                   name: 'Suse',
                   colour: 'white',
                   numberOfLegs: 4,
                   goodBoy: true
-                }</code></pre>
+                }</code></pre></div>
             </br>
                 <p>
-                One would access `name` with something like `console.log(cat.name)` which would return the string 'Suse'.</p>
+                One would access `name` with something like <code>console.log(cat.name)</code> which would return the string 'Suse'.</p>
                 <p>
                 Arrays are stored and accessed with their index. It is worth noting that array values start at '0'. Lets consider this array:</p>
-                <pre><code>const susesFriends = ['Oscar', 'Hobbes', 'Caligo']</code></pre>
+                <div class="code-block"><pre><code class="language-js">const susesFriends = ['Oscar', 'Hobbes', 'Caligo']</code></pre></div>
             </br>
                 <p>
-                You could access the string 'Hobbes' with `console.log(susesFriends[1])`. Dont forget they start at 0!</p>
+                You could access the string 'Hobbes' with <code>console.log(susesFriends[1])</code>. Dont forget they start at 0!</p>
                 <h3>What are functions and why are they helpful?</h3>
                 <p>
                 Functions are processes, or little 'factories' that perform tasks. Looking back at our grocery store example. Filling your car up with gas would be a function that only triggers when the cars fuel light comes on.</p>
@@ -78,6 +82,7 @@
                 <p>Homegroup Six Hype! 🎉</p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
         <script src="../scripts/dark-mode.js"></script>
         <script src="../scripts/burger-menu.js"></script>
     </div>
