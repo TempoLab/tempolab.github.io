@@ -42,6 +42,7 @@
 code {
     font-family: "BerkeleyMono" !important;
     text-wrap: wrap !important;
+    word-wrap: wrap !important;
 }
 .code-block {
     border-radius: 30px;
