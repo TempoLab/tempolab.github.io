@@ -42,10 +42,11 @@
 code {
     font-family: "BerkeleyMono" !important;
     white-space: normal !important;
+    overflow: auto !important;
+    
 }
 .code-block {
     border-radius: 30px;
-    overflow: auto;
 }
 .code-block > pre[class*="language-"] {
     margin: 0;
