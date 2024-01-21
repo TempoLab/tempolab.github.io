@@ -41,8 +41,7 @@
 }
 code {
     font-family: "BerkeleyMono" !important;
-    text-wrap: wrap !important;
-    max-width: 100% !important;
+    white-space: normal !important;
 }
 .code-block {
     border-radius: 30px;
@@ -240,6 +239,10 @@ a:visited {
     .nav-blog-pages {
         grid-column: 2/3;
         grid-row: 1/2;
+    }
+    code {
+        font-family: "BerkeleyMono" !important;
+        white-space: pre !important;
     }
 }
 @media (min-width: 1024px) {
