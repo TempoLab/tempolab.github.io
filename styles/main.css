@@ -197,7 +197,7 @@ a:visited {
 /* burger */
 .burger-menu-blog-pages {
     position: absolute;
-    margin-top: 1.58rem;
+    margin-top: 1.57rem;
     visibility: hidden;
     grid-column: 2/3;
     grid-row: 1/2;
