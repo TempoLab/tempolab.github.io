@@ -43,13 +43,10 @@ code {
     font-family: "BerkeleyMono" !important;
     white-space: normal !important;
     overflow: auto !important;
-    
-}
-.code-block {
-    border-radius: 30px;
 }
 .code-block > pre[class*="language-"] {
     margin: 0;
+    border-radius: 30px;
 }
 .code-block-aside {
     font-size: x-small;
@@ -130,6 +127,7 @@ a:visited {
     margin-right: auto;
 }
 .blog-title {
+    padding: 0 1rem;
     margin-bottom: 3rem;
     text-align: center;
 }
