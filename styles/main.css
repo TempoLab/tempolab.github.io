@@ -42,7 +42,7 @@
 code {
     font-family: "BerkeleyMono" !important;
     text-wrap: wrap !important;
-    word-wrap: wrap !important;
+    max-width: 100% !important;
 }
 .code-block {
     border-radius: 30px;
