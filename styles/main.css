@@ -40,14 +40,19 @@
     margin: 0;
 }
 code {
-    font-family: "BerkeleyMono";
+    font-family: "BerkeleyMono" !important;
+    text-wrap: wrap !important;
 }
 .code-block {
     border-radius: 30px;
     overflow: auto;
 }
-.code-block > pre[class^="language-"] {
+.code-block > pre[class*="language-"] {
     margin: 0;
+}
+.code-block-aside {
+    font-size: x-small;
+    text-align: center;
 }
 button {
     font-family: "Raleway", sans-serif;
@@ -191,7 +196,7 @@ a:visited {
 /* burger */
 .burger-menu-blog-pages {
     position: absolute;
-    top: 8.3%;
+    margin-top: 1.59rem;
     visibility: hidden;
     grid-column: 2/3;
     grid-row: 1/2;
