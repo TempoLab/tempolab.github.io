@@ -79,7 +79,7 @@ button:hover {
     background: var(--navbar-bg);
     border-bottom: solid var(--navbar-border-bottom);
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1rem);
     justify-items: center;
     place-items: center;
     align-items: center;
