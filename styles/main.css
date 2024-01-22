@@ -185,13 +185,6 @@ a:visited {
 .homegroup-text {
     text-align: center;
 }
-/* topbar code */
-.border-2 {
-    border-width: 2px;
-}
-.h-2 {
-    height: 0.5rem;
-}
 /* tooltip */
 .tooltip {
     position: relative;
