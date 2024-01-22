@@ -1,32 +1,34 @@
 :root{
     --body-bg: #ededed;
     --navbar-bg: #d3dce8;
-    --nav-item-bg: #e8e1d5;
+    --nav-item-bg: #ededed;
     --nav-item-border-col: #bfd0e7;
-    --blog-index-item-bg: #e8e1d5;
     --blog-index-item-border-col: #bfd0e7;
-    --footer-bg: #e8e1d5;
+    --footer-bg: #d3dce8;
     --index-menu-col: #d3dce8cc;
     --index-menu-col-solid: #d3dce8;
     --index-menu-border: #bfd0e7;
     --index-menu-hover: #5e7aa0;
     --navbar-border-bottom: #bfd0e7;
+    --footer-border-top: #bfd0e7;
+    --tooltip-bg-col: rgba(139, 173, 192, 0.548);
   }
   .dark{
     --body-bg: #222830;
     --main-text-col: #bbbbbb;
     --a-text-col:#bbbbbb;
     --navbar-bg: #5e7aa0;
-    --nav-item-bg: #b19c78;
+    --nav-item-bg: #333c49;
     --nav-item-border-col: #486b9c;
-    --blog-index-item-bg: #b19c78;
     --blog-index-item-border-col: #486b9c;
-    --footer-bg: #a89471;
+    --footer-bg: #5e7aa0;
     --index-menu-col: #5e79a0cc;
     --index-menu-col-solid: #5e79a0;
     --index-menu-border: #486b9c;
     --index-menu-hover: #d3dce8;
     --navbar-border-bottom: #486b9c;
+    --footer-border-top: #486b9c;
+    --tooltip-bg-col: rgba(160, 160, 160, 0.548);
   }
   @font-face {
     font-family: "BerkeleyMono";
@@ -64,12 +66,6 @@ button {
 button:hover {
     cursor: pointer;
 }
-.toggle-icon {
-    display: inline-block;
-    vertical-align: middle;
-    width: 1rem;
-    height: 1.25rem;
-}
 .main-content {
     color: var(--main-text-col);
 }
@@ -83,7 +79,8 @@ button:hover {
     background: var(--navbar-bg);
     border-bottom: solid var(--navbar-border-bottom);
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
     justify-items: center;
     place-items: center;
     align-items: center;
@@ -97,7 +94,11 @@ button:hover {
     background: var(--nav-item-bg);
     border-radius: 0.5rem;
     border: solid var(--nav-item-border-col);
+    margin: 0 2rem;
     padding: 10px;
+}
+a {
+    height: 21px;
 }
 a:link {
     color: black;
@@ -176,9 +177,9 @@ a:visited {
 }
 .footer {
     background: var(--footer-bg);
-    border-top: solid var(--footer-border-col);
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    border-top: solid var(--footer-border-top);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     margin-top: auto;
 }
 .homegroup-text {
@@ -194,10 +195,33 @@ a:visited {
 .topbar {
     background-color: #b91c1c;
 }
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 60px;
+    background-color: var(--tooltip-bg-col);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 2.7rem;
+    margin-left: 1.6rem;
+    z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    transition-delay: 450ms;
+}
 /* burger */
 .burger-menu-blog-pages {
     position: absolute;
-    margin-top: 1.57rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
     visibility: hidden;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -223,23 +247,20 @@ a:visited {
 }
 /* media queries */
 @media (min-width: 768px) {
-    .topbar {
-        background-color: yellow;
-    }
     .navbar {
         grid-template-columns: repeat(4, auto);
     }
     .home-button {
         grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .toggle-dark {
-        grid-column: 4/5;
-        grid-row: 1/2;
     }
     .nav-blog-pages {
         grid-column: 2/3;
-        grid-row: 1/2;
+    }
+    .nav-fun-pages {
+        grid-column: 3/4;
+    }
+    .toggle-dark {
+        grid-column: 4/5;
     }
     code {
         font-family: "BerkeleyMono" !important;
@@ -247,27 +268,21 @@ a:visited {
     }
 }
 @media (min-width: 1024px) {
-    .topbar {
-        background-color: green;
-    }
     .navbar {
-        grid-template-columns: repeat(6, auto);
+        grid-template-columns: repeat(4, auto);
     }
     .home-button {
         grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .toggle-dark {
-        grid-column: 6/7;
-        grid-row: 1/2;
     }
     .nav-blog-pages {
         grid-column: 2/3;
-        grid-row: 1/2;
+    }
+    .nav-fun-pages {
+        grid-column: 3/4;
+    }
+    .toggle-dark {
+        grid-column: 4/5;
     }
 }
 @media (min-width: 1280px) {
-    .topbar {
-        background-color: blue;
-    }
 }

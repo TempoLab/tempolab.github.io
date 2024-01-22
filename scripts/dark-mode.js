@@ -1,12 +1,12 @@
 const toggleDarkHelper = (isDark) => {
     if (isDark === true) {
         document.querySelector('#darkModeContainer').innerHTML =
-            '<button class="nav-item toggle-dark" id="toggleDark"><span class="toggle-icon">☼</span></button>';
+            '<button class="nav-item toggle-dark" id="toggleDark"><span class="toggle-icon">☀️</span></button>';
         document.body.classList.add('dark');
         return;
     }
     document.querySelector('#darkModeContainer').innerHTML =
-        '<button class="nav-item toggle-dark" id="toggleDark"><span class="toggle-icon">☾</span></button>';
+        '<button class="nav-item toggle-dark" id="toggleDark"><span class="toggle-icon">🌙</span></button>';
     document.body.classList.remove('dark');
     return;
 };

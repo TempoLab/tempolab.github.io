@@ -1,9 +1,8 @@
 <!DOCTYPE html>
   <head>
     <title>Stories and Legends (PAGE title) </title>
-    <meta charset="UTF-8">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,27 +10,73 @@
 <body class="body">
     <div class="flex-container">
       <nav class="navbar">
-        <a class="nav-item home-button" href="../index.html">Home</a>
+        <div class="tooltip">
+            <span class="tooltip-text">Home</span>
+            <button class="nav-item home-button" onclick="location.href='../index.html'">🏠</button>
+        </div>
         <div>
+            <div class="tooltip">
+                <span class="tooltip-text">Blog</span>
             <button class="nav-item nav-blog-pages" id="blog-pages-button">
-                Blog Pages
+                📚
             </button>
+            </div>
             <div class="burger-menu-blog-pages" id="burger-menu-tray">
                 <ul>
                     <p class="burger-menu-sprint-text">Sprint 1</p>
-                    <li><a href="identity-values.html">Identity Vaules Blog Post</a></li>
+                    <li>
+                        <a href="identity-values.html"
+                            >Identity Vaules Blog Post</a
+                        >
+                    </li>
                     <p class="burger-menu-sprint-text">Sprint 2</p>
-                    <li><a href="te-houtaewa-template.html">Te Houtaewa Story</a></li>
-                    <li><a href="html-css.html">CSS Concept Article</a></li>
-                    <li><a href="learning-plan.html">Learning Plan</a></li>
+                    <li>
+                        <a href="te-houtaewa-template.html"
+                            >Te Houtaewa Story</a
+                        >
+                    </li>
+                    <li>
+                        <a href="html-css.html">CSS Concept Article</a>
+                    </li>
+                    <li>
+                        <a href="learning-plan.html">Learning Plan</a>
+                    </li>
                     <p class="burger-menu-sprint-text">Sprint 3</p>
-                    <li><a href="emotional-intelligence.html">Emotional Intelligence Blog Post</a></li>
-                    <li><a href="javascript-dom.html">JS Fundamentals Blog Post</a></li>
+                    <li>
+                        <a href="emotional-intelligence.html"
+                            >Emotional Intelligence Blog Post</a
+                        >
+                    </li>
+                    <li>
+                        <a href="javascript-dom.html"
+                            >JS Fundamentals Blog Post</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="tooltip">
+                <span class="tooltip-text">Fun</span>
+            <button class="nav-item nav-fun-pages" id="fun-pages-button">
+                🪅
+            </button>
+            </div>
+            <div class="burger-menu-blog-pages" id="burger-fun-tray">
+                <ul>
+                    <p class="burger-menu-sprint-text">Fun stuff</p>
+                    <li>
+                        <a href="../fun/spotify-playlist.html"
+                            >Spotify collaborative playlist</a
+                        >
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="toggle-dark" id="darkModeContainer">
-            <button class="nav-item" id="toggleDark">☾</button>
+            <button class="nav-item" id="toggleDark">
+                <span class="toggle-icon">🌙</span>
+            </button>
         </div>
     </nav>
         <main class="main-content">
