@@ -213,7 +213,7 @@ button:hover {
 .burger-menu-blog-pages {
     position: absolute;
     margin-top: 1.5rem;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     visibility: hidden;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -245,6 +245,9 @@ button:hover {
 @media (min-width: 768px) {
     .tooltip .tooltip-text {
         margin-left: 1.6rem;
+    }
+    .burger-menu-blog-pages {
+        margin-left: 2rem;
     }
     .navbar {
         grid-template-columns: repeat(4, auto);
