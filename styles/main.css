@@ -80,7 +80,6 @@ button:hover {
     border-bottom: solid var(--navbar-border-bottom);
     display: grid;
     grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
     justify-items: center;
     place-items: center;
     align-items: center;
@@ -185,6 +184,13 @@ a:visited {
 .homegroup-text {
     text-align: center;
 }
+/* spotify */
+.spotify-playlist {
+    margin: 0 2rem;
+}
+.spotify-playlist > iframe > html > body > #__next > div {
+    --background-color: red !important;
+}
 /* tooltip */
 .tooltip {
     position: relative;
@@ -273,6 +279,12 @@ a:visited {
     .toggle-dark {
         grid-column: 4/5;
     }
+    .spotify-playlist {
+        margin: 0 4rem;
+    }
 }
 @media (min-width: 1280px) {
+    .spotify-playlist {
+        margin: 0 10rem;
+    }
 }
