@@ -186,7 +186,7 @@ a:visited {
 }
 /* spotify */
 .spotify-playlist {
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 .spotify-playlist > iframe > html > body > #__next > div {
     --background-color: red !important;
