@@ -93,7 +93,7 @@ button:hover {
     background: var(--nav-item-bg);
     border-radius: 0.5rem;
     border: solid var(--nav-item-border-col);
-    margin: 0 2rem;
+    margin: 0 1rem;
     padding: 10px;
 }
 a {
@@ -188,9 +188,6 @@ a:visited {
 .spotify-playlist {
     margin: 0 1rem;
 }
-.spotify-playlist > iframe > html > body > #__next > div {
-    --background-color: red !important;
-}
 /* tooltip */
 .tooltip {
     position: relative;
@@ -257,6 +254,9 @@ a:visited {
     }
     .toggle-dark {
         grid-column: 4/5;
+    }
+    .nav-item {
+        margin: 0 2rem;
     }
     code {
         font-family: "BerkeleyMono" !important;
