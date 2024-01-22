@@ -192,9 +192,6 @@ a:visited {
 .h-2 {
     height: 0.5rem;
 }
-.topbar {
-    background-color: #b91c1c;
-}
 /* tooltip */
 .tooltip {
     position: relative;
