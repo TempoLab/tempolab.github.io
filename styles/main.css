@@ -12,6 +12,9 @@
     --navbar-border-bottom: #bfd0e7;
     --footer-border-top: #bfd0e7;
     --tooltip-bg-col: rgba(139, 173, 192, 0.548);
+    --table-head-col: #d3dce8;
+    --table-border-col: #bfd0e7;
+    --table-even-row-col: #d2e4fd59;
   }
   .dark{
     --body-bg: #222830;
@@ -29,6 +32,9 @@
     --navbar-border-bottom: #486b9c;
     --footer-border-top: #486b9c;
     --tooltip-bg-col: rgba(160, 160, 160, 0.548);
+    --table-head-col: #5e7aa0;
+    --table-border-col: #486b9c;
+    --table-even-row-col: #6fa8f821;
   }
   @font-face {
     font-family: "BerkeleyMono";
@@ -209,6 +215,24 @@ button:hover {
     visibility: visible;
     transition-delay: 450ms;
 }
+/* table */
+#twtw-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#twtw-table td, #twtw-table th{
+    border: 3px solid var(--table-border-col);
+    padding: 8px;
+}
+#twtw-table th {
+    text-align: center;
+    color: black;
+    background-color: var(--table-head-col);
+}
+#twtw-table tr:nth-child(even){
+    background-color: var(--table-even-row-col);
+}
+
 /* burger */
 .burger-menu-blog-pages {
     position: absolute;
