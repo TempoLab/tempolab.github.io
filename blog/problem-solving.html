@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head>
+    <title>Problem Solving Blog Post</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <meta
+        charset="UTF-8"
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-coldark-dark.min.css"
+        rel="stylesheet"
+    />
+</head>
+<body class="body">
+    <div class="flex-container">
+        <nav class="navbar">
+            <div class="tooltip">
+                <span class="tooltip-text">Home</span>
+                <button
+                    class="nav-item home-button"
+                    onclick="location.href='../index.html'"
+                >
+                    🏠
+                </button>
+            </div>
+            <div>
+                <div class="tooltip">
+                    <span class="tooltip-text">Blog</span>
+                    <button
+                        class="nav-item nav-blog-pages"
+                        id="blog-pages-button"
+                    >
+                        📚
+                    </button>
+                </div>
+                <div class="burger-menu-blog-pages" id="burger-menu-tray">
+                    <ul>
+                        <p class="burger-menu-sprint-text">Sprint 1</p>
+                        <li>
+                            <a href="identity-values.html"
+                                >Identity Vaules Blog Post</a
+                            >
+                        </li>
+                        <p class="burger-menu-sprint-text">Sprint 2</p>
+                        <li>
+                            <a href="te-houtaewa-template.html"
+                                >Te Houtaewa Story</a
+                            >
+                        </li>
+                        <li>
+                            <a href="html-css.html">CSS Concept Article</a>
+                        </li>
+                        <li>
+                            <a href="learning-plan.html">Learning Plan</a>
+                        </li>
+                        <p class="burger-menu-sprint-text">Sprint 3</p>
+                        <li>
+                            <a href="emotional-intelligence.html"
+                                >Emotional Intelligence Blog Post</a
+                            >
+                        </li>
+                        <li>
+                            <a href="javascript-dom.html"
+                                >JS Fundamentals Blog Post</a
+                            >
+                        </li>
+                        <p class="burger-menu-sprint-text">Sprint 4</p>
+                        <li>
+                            <a href="neuroplasticity.html">Mindset Blog Post</a>
+                        </li>
+                        <li>
+                            <a href="te-whare-tapa-wha.html"
+                                >Te Whare Tapa Whā Blog Post</a
+                            >
+                        </li>
+                        <li>
+                            <a href="problem-solving.html"
+                                >Problem Solving Blog Post</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="tooltip">
+                    <span class="tooltip-text">Fun</span>
+                    <button
+                        class="nav-item nav-fun-pages"
+                        id="fun-pages-button"
+                    >
+                        🪅
+                    </button>
+                </div>
+                <div class="burger-menu-blog-pages" id="burger-fun-tray">
+                    <ul>
+                        <p class="burger-menu-sprint-text">Fun stuff</p>
+                        <li>
+                            <a href="../fun/spotify-playlist.html"
+                                >Spotify collaborative playlist</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="toggle-dark" id="darkModeContainer">
+                <button class="nav-item" id="toggleDark">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+        <main class="main-content">
+            <h1 class="blog-title">Problem Solving Blog Post</h1>
+            <div class="p-text-blog">
+                <h3>Tell your non-tech friend a story about a time you:</h3>
+                <h4>were blocked on a simple problem.</h4>
+                <p>
+                    Last night I was working on a problem which involved adding
+                    scores to a students information. I wasnt able to achieve
+                    the outcome in what I felt was a reasonable amount of time.
+                </p>
+                <p>
+                    I had used a combination of a tool we can use to see whats
+                    going on <code>console.log()</code> and google to reference
+                    the tools I was using as well as look at some other peoples
+                    examples.
+                </p>
+                <p>
+                    After a bit of frustration and struggling I managed to pin
+                    down that the breakdown was happening at the point where I
+                    was trying to point to the student that I wanted to add the
+                    information to. Turns out I was pointing incorrectly!
+                </p>
+                <p>What I had written down was:</p>
+                <p>
+                    <code>gradebook.student.testScores = scoreToAdd</code>
+                </p>
+                <p>and what I needed was:</p>
+                <p>
+                    <code>gradebook[student].testScores = scoreToAdd</code>
+                </p>
+                <p>
+                    It took a long time for me to get there and I think I could
+                    have avoided a lot of frustration if I just took a break to
+                    refresh myself instead of having the mindset "I'll take a
+                    break as soon as I finish this."
+                </p>
+                <h4>elegantly solved a problem.</h4>
+                <p>
+                    So... Also off the back of a silly mistake. I accidentally
+                    misread the fizzbuzz challenge.
+                </p>
+                <p>
+                    Fizzbuzz is a challenge where numbers that are divisible by
+                    3 needs to be replaced with the word <strong>fizz</strong>,
+                    numbers that are divisible by 5 needs to be replaced with
+                    the word <strong>buzz</strong> and numbers that are
+                    divisible by 15 need to be replaced by
+                    <strong>fizzbuzz</strong>.
+                </p>
+                <p>
+                    I had initially thought that the first part of the challenge
+                    needed to take a list of numbers <em>not</em> individual
+                    numbers. So although I managed to solve the problem fairly
+                    quickly I was not passing the test we use. Luckily I was
+                    fairly confident in the code I wrote and ended up chucking
+                    the code into the browser console so I could log the results
+                    to see why the test wasnt passing. (note: This was before I
+                    worked out you could <code>console.log()</code> and run the
+                    <code>xyz.js</code> file in the terminal with node.)
+                </p>
+                <img
+                    class="blog-img"
+                    src="../assets/img/fizzbuzz.png"
+                    alt="Code in browser console."
+                />
+                <p>
+                    When I saw the results where as expected I started to talk
+                    to myself or 'rubberduck' and eventually, and I'm not sure
+                    when or how, it dawned on me that I was only supposed to
+                    check individual numbers and not a list of numbers. From
+                    there I was easily able to change or 'refactor' my code to
+                    pass both that test as well as the next test which was to
+                    check lists, and that felt good.
+                </p>
+                <p>
+                    I think it goes without saying I would have saved myself a
+                    lot of time had I just read the questions properly. 🤦‍♂️
+                </p>
+                <h3>
+                    Reflect on how confident you feel using each of these
+                    problem-solving techniques/processes:
+                </h3>
+                <p>
+                    <strong>Pseudocode:</strong> I cant say that I use
+                    pseudocode that much out side of challenges yet, I still
+                    struggle a bit to break down my problems enough to justify
+                    using it. I do use a notebook to list bigger things though,
+                    for example when working on my blog I made a list of things
+                    that needed to be done and checked them off as I completed
+                    them.
+                </p>
+                <p>
+                    <strong>Trying something:</strong> Probably my most used
+                    problem solving technique.
+                </p>
+                <p>
+                    <strong>Rubber ducky method:</strong> I do use this method
+                    from time to time but I only do it in its truest form when I
+                    am <em><strong>stuck</strong></em> stuck. Otherwise I
+                    generally will talk the flow of logic out to myself and see
+                    if I can see something going wrong or use it in tandum with
+                    <code>console.log()</code>.
+                </p>
+                <p>
+                    <strong>Reading error messages:</strong> I think I am
+                    alright with this though there definitely are some that will
+                    throw me for a loop.
+                </p>
+                <p>
+                    <strong>Console.logging:</strong> Through this most recent
+                    challenge I definitly feel this one beginning to stick.
+                    Before I would always forget or try bruite force and guess
+                    what was going wrong or I would not know where to log to get
+                    any useful informating. I am super happy that I am starting
+                    to feel like I'm getting more value from this.
+                </p>
+                <p>
+                    <strong>Googling:</strong> Probably the second most used. I
+                    dont offhand know syntax and I need to reference docs or
+                    code examples a lot to make sure Im writing things
+                    correctly. I also need google to reference the specific
+                    tools I want to use to brush up on them eg.
+                    <code>.map()</code> and <code>.filter()</code>.
+                </p>
+                <p>
+                    <strong>Asking peers/coaches for help:</strong> Up untill
+                    now I have managed to get by mostly on my own, I do have a
+                    friend in the industry that I will sometimes send my code to
+                    and ask how he would solve the problem to see what
+                    tools/approach he would use. Sometimes we have a discussion
+                    about the solution and then when I run into similar things I
+                    will reference the tools he has brought my attention to as
+                    mentioned in <strong>googling</strong> and try to use them.
+                </p>
+                <p>
+                    <strong>Improving your process with reflection:</strong> I
+                    definitely do reflect on my code however I dont do this
+                    conciously.
+                </p>
+                <h3>
+                    Reflect on a time you were reluctant to ask for help.
+                    Consider what made you reluctant to do so. What might you
+                    try differently next time?
+                </h3>
+                <p>
+                    At the moment I believe I am reluctant to ask for help as I
+                    am working ahead of schedule so I dont need to worry so much
+                    about missing deadlines.
+                </p>
+                <p>
+                    When I get blocked and things take a long time to solve I
+                    have a decent amount of runway to attempt the problem on my
+                    own. I believe also honing some of my problem solving skills
+                    in the process.
+                </p>
+                <p>
+                    In the future where deadlines are creeping up and I am
+                    unable to solve the problem myself in a reasonable amount of
+                    time I will definitely reach out for help but for now where
+                    I have the time I dont feel it is as necessary.
+                </p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="homegroup-text">
+                <p>Homegroup Six Hype! 🎉</p>
+            </div>
+        </footer>
+        <script src="../scripts/dark-mode.js"></script>
+        <script src="../scripts/burger-menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    </div>
+</body>
